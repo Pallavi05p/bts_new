@@ -81,7 +81,7 @@ const Contactform = () => {
           <div className="flex items-start gap-3">
             <TfiEmail className="text-blue-500 w-5 h-5 mt-1" />
             <a href="mailto:marketing@btsadvertising.in" className="hover:underline text-white">
-              marketing@btsadvertising.
+              marketing@btsadvertising.in
             </a>
           </div>
         </div>

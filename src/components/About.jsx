@@ -22,7 +22,7 @@ const BrandSection = () => {
             We don’t just market — we transform. From digital campaigns to physical branding, BTS Advertising is your one-stop destination for complete visibility.
           </p>
           <img
-            src="/about1.png"
+            src="/About1.png"
             alt="Digital Campaign"
             className="rounded-xl w-full md:h-40 h-40 object-cover"
           />
@@ -36,7 +36,7 @@ const BrandSection = () => {
         {/* Right Card (Mobile on bottom) */}
         <div className="bg-[#94BDF338] rounded-2xl p-4 lg:p-6 md:max-h-64 md:text-xs w-full lg:max-w-sm max-w-2xl lg:text-sm text-sm text-gray-700 flex flex-row md:text-left gap-4 order-3 md:order-none -mt-20 md:-mt-0">
           <img
-            src="/about2.png"
+            src="/About2.png"
             alt="Client Results"
             className="rounded-xl w-full h-40 object-cover"
           />
