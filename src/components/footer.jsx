@@ -96,7 +96,7 @@ const Footer = () => {
           </div>
 
           {/* Contact + Social Icons */}
-          <div className="flex flex-col items-center md:items-start gap-4 mr-2">
+          <div className="flex flex-col items-center md:items-start gap-4 mr-10 ">
             <div>
               <h4 className="font-semibold mb-2 text-left font-kumbh mt-2 md:mt-0 text-black">
                 Contact
