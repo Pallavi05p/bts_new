@@ -1,98 +1,64 @@
 import React from "react";
+import circleImage from "/circle.png";
+import triangleBg from "/Rectangle 18.png";
+import triangleBg2 from "/Rectangle 19.png";
+import arrow1 from "/Group 5.png";
+import arrowMiddle from "/Arrow 02.png"; // Use the uploaded arrow image
 
 const CreativeTeam = () => {
   return (
-    <section className="bg-white px-4 md:px-32 md:mx-6 py-20 rounded-[40px] font-kumbh flex flex-col md:flex-row items-center justify-between gap-16 max-[640px]:max-w-[100vw]  md:max-h-[120vh] ">
+    <section className="relative bg-white w-full   p-4 md:p-12 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between overflow-hidden">
 
-      {/* Team Circle - Mobile First */}
-      <div className="relative w-full md:w-1/2 flex items-center justify-center order-1 md:order-2">
-        {/* Center Circle Text */}
-        <div className="absolute text-center z-10">
-          <img src="/ellipse.png" alt="Creative Icon" className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-2" />
-          <p className="font-semibold text-lg md:text-2xl leading-tight">
-            Experienced <br /> Creative  <br />Team
-          </p>  
+      {/* Left Content */}
+      <div className="md:w-1/2 w-full flex flex-col items-start justify-center z-10 gap-4">
+        {/* Top Triangle */}
+        <div className="relative">
+          <img src={triangleBg} alt="Triangle Shape" className="object-contain h-[380px]" />
+          <div className="absolute top-0 flex flex-col justify-center p-6">
+            <div className="flex mt-2 md:mt-0 items-center space-x-6">
+              <img src={arrow1} alt="" className=" size-16  md:size-12" />
+              <h2 className="font-bold text-2xl md:text-3xl text-black mb-2">Multi-Channel Expertise</h2>
+            </div>
+            <p className="text-lg w-80 mt-8   text-gray-800">
+              Our team is a powerhouse of designers, strategists, and content creators who bring bold ideas to life.
+              With years of experience across industries.
+            </p>
+          </div>
         </div>
 
-       <div className="relative flex items-center justify-center w-full">
-  {/* Orbit Circle */}
-  <div className="w-[100vw] max-w-[440px] md:max-w-[560px] md:w-[560px] md:h-[560px] aspect-square border border-dashed border-blue-500 rounded-full flex items-center justify-center">
-    <div className="w-4/5 h-4/5 border border-dashed border-blue-500 rounded-full flex items-center justify-center">
-      <div className="w-3/5 h-3/5 border border-dashed border-blue-500 rounded-full" />
-    </div>
-  </div>
-
-  {/* Avatars - keep position same visually with md: overrides */}
-  <img src="/Ellipse 9.png" alt="Person 1" className="absolute top-[18rem] right-64 md:top-[21rem] md:right-[67%] transform -translate-x-1/2 md:w-24 md:h-24 max-[640px]:w-16 max-[640px]:h-16 h-20 w-20 rounded-full border-2 border-white shadow-md" />
-  
-  <img src="/Ellipse 10.png" alt="Person 2" className="absolute max-[640px]:-right-4 right-28 top-1/3 md:-right-8 md:top-[38%] md:w-20 md:h-20 max-[640px]:w-12 max-[640px]:h-12 h-16 w-16 rounded-full border-2 border-white shadow-md" />
-  
-  <img src="/Ellipse 11.png" alt="Person 3" className="absolute right-[30%] bottom-[18rem] md:right-[32%] md:bottom-[22rem] md:w-20 md:h-20 max-[640px]:w-16 max-[640px]:h-16 h-18 w-18 rounded-full border-2 border-white shadow-md" />
-  
-  <img src="/Ellipse 12.png" alt="Person 4" className="absolute left-[70%] bottom-0 md:left-[72%] md:bottom-[-1rem] transform -translate-x-1/2 md:w-20 md:h-20 max-[640px]:w-16 max-[640px]:h-16 rounded-full border-2 border-white shadow-md" />
-  
-  <img src="/Ellipse 8.png" alt="Person 6" className="absolute top-1/3 left-[6%] md:top-[38%] md:left-[4%] md:w-20 md:h-20 max-[640px]:w-16 max-[640px]:h-16 rounded-full border-2 border-white shadow-md" />
-  
-  <img src="/Ellipse 7.png" alt="Person 7" className="absolute -top-6 max-[640px]:right-[16%] right-[28%] md:-top-10 md:right-[14%] md:w-24 md:h-24 max-[640px]:w-16 max-[640px]:h-16 h-16 w-16 rounded-full border-2 border-white shadow-md" />
-</div>
-
-
-        {/* Arrow (Desktop Only) */}
-        <img src="/Arrow 02.png" alt="Arrow" className="absolute -left-80 top-1/2 transform -translate-y-1/2 lg:w-64 md:w-40 hidden md:block md:-right-8 lg:right-0" />
+        {/* Bottom Triangle */}
+        <div className="relative md:mt-4">
+          <img src={triangleBg2} alt="Triangle Shape" className="object-contain h-[380px] w-auto" />
+          <div className="absolute bottom-0 flex flex-col justify-center p-6">
+            <p className="text-lg w-72 md:pb-4 md:w-80 mb-8 md:mb-0 md:text-lg text-gray-800">
+              From logo creation and social media management to full-scale printing and packaging,
+              we handle everything under one roof.
+            </p>
+            <div className="flex items-center mb-2 space-x-6">
+              <img src={arrow1} alt="" className="size-16" />
+              <h2 className="font-bold text-2xl  md:text-3xl text-black mb-2">End-to-End Branding Solutions</h2>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Text Cards - Mobile Second */}
-      <div className="w-full max-w-2xl order-2 md:order-1">
+      {/* Middle Arrow */}
+      <img
+        src={arrowMiddle}
+        alt="Middle Arrow"
+        className=" hidden md:block  absolute left-1/3 transform -translate-x-1/2 top-1/2 -translate-y-1/2 w-24 md:w-52 rotate-[0deg] z-0"
+      />
 
-       {/* Box 1 */}
-<div className="relative w-full md:-ml-24 mb-6  aspect-[2/3] overflow-hidden rounded-xl max-h-[400px] md:max-h-[350px] ">
-  <img
-    src="/Rectangle 18.png"
-    alt="Background Shape"
-    className="xl:w-[650px] h-full object-contain rounded-xl "
-  />
-  <div className="absolute inset-0    lg:-mt-24   md:mr-4   flex flex-col  items-center md:items-start text-black z-10  md:text-left   justify-center xl:left-12   ">
-    <div className="flex items-center mb-2 md:mb-3 padding-exact-1024 mx-10  md:-ml-16 ">
-      <img src="/Group 5.png" className="w-12 lg:w-16 h-12 lg:h-16 mr-2 xl:ml-16  " />
-      <h3 className="text-xl lg:text-2xl mx-0 md:mt-10 lg:mt-0 font-semibold leading-tight md:whitespace-nowrap lg:whitespace-nowrap whitespace-nowrap lg:mr-6    ">
-        Multi-Channel<br className="hidden md:block" /> Expertise
-      </h3>
-    </div>
-    <p className="text-base text-left lg:mx-8 md:text-sm lg:text-lg leading-snug md:whitespace-nowrap lg:whitespace-nowrap   lg:ml-4  xl:-mb-7 xl:ml-10   ">
-      Our team is a powerhouse of<br />
-      designers, strategists, and content<br />
-      creators who bring bold ideas to life.<br />
-      With years of experience across<br />
-      industries.
-    </p>
-  </div>
-</div>
-
-        {/* Box 2 */}
-      <div className="relative w-full -mt-16 md:mt-0 lg:mt-0  md:-ml-24 aspect-[2/3] overflow-hidden rounded-xl max-h-[400px] md:max-h-[350px]">
-  <img
-    src="/Rectangle 19.png"
-    alt="Background Shape"
-    className="xl:w-[650px] h-full object-contain rounded-xl  "
-  />
-  <div className="absolute inset-0  md:p-4 flex lg:mt-32 flex-col justify-center items-center md:items-center text-black z-10 text-center md:text-left marginbottom-exact-1024 -ml-12">
-    <p className="text-base -mx-8 text-left md:text-sm lg:text-lg mb-2 md:mb-3 leading-snug xl:-mt-11 ">
-      From logo creation and social<br />
-      media management to full-scale<br />
-      printing and packaging, we<br />
-      handle everything under one roof.
-    </p>
-    <div className="flex items-center">
-      <img src="/Group 5.png" className="w-12 lg:w-16 h-12 lg:h-16 ml-4 md:ml-0 lg:-ml-8" />
-      <h3 className="text-xl lg:text-2xl font-semibold leading-tight mr-8 md:mr-0 lg:mr-0 ml-2 whitespace-nowrap lg:whitespace-normal">
-        End-to-End<br className="hidden md:block" /> Branding Solutions
-      </h3>
-    </div>
-  </div>
-</div>
+      {/* Right Content */}
+      <div className="relative md:w-1/2 w-full flex items-center justify-center mt-10 md:mt-0 z-10">
+        <img
+          src={circleImage}
+          alt="Creative Team Circle"
+          className="w-full max-w-md md:max-w-lg"
+        />
       </div>
     </section>
   );
 };
 
-export default CreativeTeam; 
+export default CreativeTeam;
