@@ -48,44 +48,59 @@ const Contactform = () => {
       {/* Left - Contact Info */}
       <div className="md:w-1/2 space-y-6">
         <h2 className="text-4xl font-semibold font-kumbh">Let's talk with us</h2>
-        <p className="text-[#D9D9D9] font-dmsans whitespace-nowrap">
-          Questions, comments, or suggestions? Simply fill in<br /> the form and we’ll be in touch shortly.
+        <p className="text-white font-dmsans">
+          Questions, comments, or suggestions? Simply fill in the form and we’ll be in touch shortly.
         </p>
-        <div className="space-y-3">
-          <div className="flex items-start gap-2 font-dmsans">
-            <LuMapPin className="text-blue-500 w-6 h-6" />
-            <p className="text-[#D9D9D9]">
-              Golden City Center, Near Prozon Mall<br />
-              Chhatrapati Sambhajinagar, 431001
-            </p>
+
+        <div className="space-y-4">
+          {/* Address */}
+          <div className="flex items-start gap-3 ">
+            <LuMapPin className="text-blue-500 w-6 h-6 mt-1" />
+            <a
+              href="https://maps.app.goo.gl/7tCBz8qgqSt5mqUg7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-white"
+            >
+              Khinavasara August Heighstreet, Office No. F-12,<br />
+              Ulkanagari, Garkheda,<br />
+              Chh. Sambhajinagar 431001
+            </a>
           </div>
-          <div className="flex items-start gap-2 font-dmsans text-semibold">
-            <BsTelephone className="text-blue-500 w-6 h-6" />
-            <p>+1 234 678 9108 99</p>
+
+          {/* Phone numbers */}
+          <div className="flex items-start gap-3">
+            <BsTelephone className="text-blue-500 w-5 h-5 mt-1 " />
+            <div>
+              <a href="tel:9284979500" className="block text-white hover:underline">9284979500</a>
+              <a href="tel:7741009500" className="block text-white hover:underline">7741009500</a>
+            </div>
           </div>
-          <div className="flex items-center gap-2 font-dmsans text-semibold">
-            <TfiEmail className="text-blue-500 w-6 h-6" />
-            <p>Contact@bts.com</p>
+
+          {/* Email */}
+          <div className="flex items-start gap-3">
+            <TfiEmail className="text-blue-500 w-5 h-5 mt-1" />
+            <a href="mailto:marketing@btsadvertising.in" className="hover:underline text-white">
+              marketing@btsadvertising.
+            </a>
           </div>
         </div>
       </div>
 
-      {/* Right - Form */}
+      {/* Right - Contact Form */}
       <form
         onSubmit={handleSubmit}
         className="bg-white rounded-lg p-6 md:p-8 w-full md:w-3/6 text-black shadow-lg"
       >
-        <div className="flex flex-col md:flex-row gap-4 mb-4">
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Name*"
-            required
-            className="border border-gray-300 focus:border-blue-500 focus:outline-none px-4 py-2 rounded w-full"
-          />
-        </div>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Name*"
+          required
+          className="border border-gray-300 focus:border-blue-500 focus:outline-none px-4 py-2 rounded w-full mb-4"
+        />
         <input
           type="email"
           name="email"
@@ -119,15 +134,9 @@ const Contactform = () => {
           Send Message
         </button>
 
-        {status === 'loading' && (
-          <p className="text-sm text-gray-500 mt-2">Sending...</p>
-        )}
-        {status === 'success' && (
-          <p className="text-sm text-green-600 mt-2">Message sent successfully!</p>
-        )}
-        {status === 'error' && (
-          <p className="text-sm text-red-500 mt-2">Failed to send. Please try again.</p>
-        )}
+        {status === 'loading' && <p className="text-sm text-gray-500 mt-2">Sending...</p>}
+        {status === 'success' && <p className="text-sm text-green-600 mt-2">Message sent successfully!</p>}
+        {status === 'error' && <p className="text-sm text-red-500 mt-2">Failed to send. Please try again.</p>}
       </form>
     </div>
   );

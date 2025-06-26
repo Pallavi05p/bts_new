@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { SlSocialYoutube } from 'react-icons/sl';
+import { FiTwitter } from 'react-icons/fi';
+import { RiFacebookLine } from 'react-icons/ri';
+import { BiLogoInstagram } from 'react-icons/bi';
 
 const Footer = () => {
   return (
@@ -25,9 +29,9 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-blue-500 text-white rounded-full w-32 h-12 flex items-center gap-3 hover:bg-blue-600 transition font-kumbh"
+              className="bg-blue-500 text-white rounded-full hover:bg-blue-600 transition w-44"
             >
-              Send <img src="Group 5.png" className="h-10 ml-4" alt="Send Icon" />
+              Send
             </button>
           </form>
         </div>
@@ -36,59 +40,65 @@ const Footer = () => {
         <div className="flex-1 md:grid md:grid-cols-3 flex-row gap-2 lg:-ml-48 text-sm text-gray-600">
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-2 text-left font-kumbh">Quick Links</h4>
+            <h4 className="font-semibold mb-2 text-left font-kumbh text-black">Quick Links</h4>
             <ul className="space-y-1 text-left font-dmsans text-[#1E1E1E82]">
-              <Link to="/"><li className="hover:underline cursor-pointer mt-1">Home</li></Link>
-              <Link to="/about"><li className="hover:underline cursor-pointer mt-1">About</li></Link>
-              <Link to="/services"><li className="hover:underline cursor-pointer mt-1">Services</li></Link>
-              <Link to="/contact"><li className="hover:underline cursor-pointer mt-1">Contact Us</li></Link>
+              <Link to="/"><li className="hover:underline cursor-pointer mt-1 text-gray-400">Home</li></Link>
+              <Link to="/about"><li className="hover:underline cursor-pointer mt-1 text-gray-400">About</li></Link>
+              <Link to="/services"><li className="hover:underline cursor-pointer mt-1 text-gray-400">Services</li></Link>
+              <Link to="/contact"><li className="hover:underline cursor-pointer mt-1 text-gray-400">Contact Us</li></Link>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-2 text-left font-kumbh mt-2 md:mt-0">Services</h4>
+            <h4 className="font-semibold mb-2 text-left font-kumbh mt-2 md:mt-0 text-black">Services</h4>
             <ul className="space-y-1 text-left font-dmsans text-[#1E1E1E82]">
-              <Link to="/services"><li className="hover:underline cursor-pointer">Digital Marketing</li></Link>
-              <Link to="/services"><li className="hover:underline cursor-pointer mt-1">Printing</li></Link>
-              <Link to="/services"><li className="hover:underline cursor-pointer mt-1">Social Media Marketing</li></Link>
+              <Link to="/services"><li className="hover:underline cursor-pointer text-gray-400">Digital Marketing</li></Link>
+              <Link to="/services"><li className="hover:underline cursor-pointer mt-1 text-gray-400">Printing</li></Link>
+              <Link to="/services"><li className="hover:underline cursor-pointer mt-1 text-gray-400">Social Media Marketing</li></Link>
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="font-semibold mb-2 text-left font-kumbh mt-2 md:mt-0">Contact</h4>
-            <ul className="space-y-1 text-left font-dmsans text-[#1E1E1E82]">
-              <a href="tel:7741009500"><li className="hover:underline cursor-pointer">7741009500</li></a>
-              <a href="mailto:marketing@btsadvertising.in">
-                <li className="hover:underline cursor-pointer mt-1">marketing@btsadvertising.in</li>
-              </a>
-              <a href="https://maps.app.goo.gl/7tCBz8qgqSt5mqUg7">
-                <li className="hover:underline cursor-pointer mt-1">
-                  Golden City Center,<br />Chhatrapati Sambhajinagar
-                </li>
-              </a>
-            </ul>
-          </div>
-        </div>
-      </div>
+          {/* Contact + Social Icons */}
+          <div className="flex flex-col items-center md:items-start gap-4 mr-64">
+            <div>
+              <h4 className="font-semibold mb-2 text-left font-kumbh mt-2 md:mt-0 text-black">Contact</h4>
+              <ul className="space-y-1 text-left font-dmsans text-[#1E1E1E82]">
+                <a href="tel:9284979500"><li className="hover:underline cursor-pointer text-gray-400">9284979500</li></a>
+                <a href="tel:7741009500"><li className="hover:underline cursor-pointer mt-1 text-gray-400">7741009500</li></a>
+                <a href="mailto:marketing@btsadvertising.in">
+                  <li className="hover:underline cursor-pointer mt-1 text-gray-400">marketing@btsadvertising.in</li>
+                </a>
+                <a href="https://maps.app.goo.gl/7tCBz8qgqSt5mqUg7" target="_blank" rel="noopener noreferrer">
+                  <li className="hover:underline cursor-pointer mt-1 text-left text-gray-400">
+                    Khinavasara August Heighstreet, Office No. F-12,<br />
+                    Ulkanagari, Garkheda,<br />
+                    Chh. Sambhajinagar 431001
+                  </li>
+                </a>
+              </ul>
+            </div>
 
-      {/* Social Media Icons */}
-      <div className="bg-white w-full py-4 px-5">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <div className="flex gap-6">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <Facebook className="text-blue-600 hover:text-blue-700 cursor-pointer" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <Instagram className="text-blue-600 hover:text-pink-500 cursor-pointer" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <Twitter className="text-blue-600 hover:text-sky-500 cursor-pointer" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="text-blue-600 hover:text-blue-700 cursor-pointer" />
-            </a>
+            {/* Custom Styled Social Icons */}
+            <div className="flex justify-center md:justify-start gap-4 mt-4 ">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-blue-600 flex items-center justify-center  hover:text-green-900 transition">
+                <RiFacebookLine className="w-5 h-5 text-blue-600" />
+              </a>
+             <a
+  href="https://youtube.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-10 h-10 rounded-full border border-blue-600 flex items-center justify-center  hover:text-green-900 transition"
+>
+  <SlSocialYoutube className="w-5 h-5 text-blue-500" />
+</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-blue-600 flex items-center justify-center  hover:text-green-900 transition">
+                <FiTwitter className="w-5 h-5 text-blue-500" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-blue-600 flex items-center justify-center  hover:text-green-900 transition">
+                <BiLogoInstagram className="w-5 h-5 text-blue-500" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

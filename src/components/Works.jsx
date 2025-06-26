@@ -4,7 +4,7 @@ export default function PortfolioShowcase() {
   return (
     <div className="bg-white py-12 px-4 md:px-16 rounded-3xl shadow-md font-Kumbh Sans -mt-16 md:mt-8 lg:mt-14">
       <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-black text-center md:text-left font-kumbh ml-4 ">
-        OUR WORK SPEAKS LOUDER THAN WORDS
+        OUR WORK SPEAKS LOUDER THAN WORDS 
       </h2>
       <p className="text-gray-500  md:text-left font-dmsans ml-5 mt-7">
         Real Results. Bold Creativity. Proven Impact.
@@ -34,12 +34,12 @@ export default function PortfolioShowcase() {
 <div className="w-full h-px bg-gray-200 mb-2 "></div>
 
       {/* Second Project */}
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 mb-16 md:ml-64 md:mt-12">
-        <div className="md:col-span-2 md:order-1  text-center md:text-right hidden md:block lg:mx-8">
-          <h3 className="text-xl md:text-2xl font-semibold text-black mb-2 font-dmsans">
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 mb-16 md:ml-64 md:mt-12  ">
+        <div className="md:col-span-2 md:order-1  text-center md:text-right hidden md:block lg:mx-8 ">
+          <h3 className="text-xl md:text-2xl font-semibold text-black mb-2 font-dmsans mr-4 ">
            Tata Motors – <br /> Vehicle Branding
           </h3>
-          <p className="text-[#1E1E1E82] text-sm md:text-base leading-relaxed font-dmsans">
+          <p className="text-[#1E1E1E82] text-sm md:text-base leading-relaxed font-dmsans mr-4 ">
             To enhance local visibility, BTS Advertising designed and<br className="hidden md:block" />
             implemented vibrant vehicle wraps for Ramesh Ice Creams.<br className="hidden md:block" />
             The mobile advertisements significantly increased brand<br className="hidden md:block" />
@@ -52,10 +52,10 @@ export default function PortfolioShowcase() {
           className="rounded-xl w-full h-auto md:w-[280px] md:h-[280px] object-cover md:order-2"
         />
         <div className="md:col-span-2 md:order-1 text-center md:text-right md:hidden">
-          <h3 className="text-xl md:text-2xl font-semibold text-black mb-2 font-dmsans">
+          <h3 className="text-xl md:text-2xl font-semibold text-black mb-2 font-dmsans ">
             Tata Motors – <br/> Vehicle Branding
           </h3>
-          <p className="text-[#1E1E1E82] text-sm md:text-base leading-relaxed font-dmsans">
+          <p className="text-[#1E1E1E82] text-sm md:text-base leading-relaxed font-dmsans  ">
             To enhance local visibility, BTS Advertising designed and<br className="hidden md:block" />
             implemented vibrant vehicle wraps for Ramesh Ice Creams.<br className="hidden md:block" />
             The mobile advertisements significantly increased brand<br className="hidden md:block" />
@@ -73,10 +73,10 @@ export default function PortfolioShowcase() {
           className="rounded-xl w-full h-auto md:w-[280px] md:h-[280px] object-contain"
         />
         <div className="md:col-span-2 lg:-ml-16 ml-exact-1024-0 text-center md:text-left ">
-          <h3 className="text-xl md:text-2xl font-semibold text-black mb-2 font-dmsans">
+          <h3 className="text-xl md:text-2xl font-semibold text-black mb-2 font-dmsans -ml-5">
           Rajlaxmi School – <br /> Branding Post
           </h3>
-          <p className="text-[#1E1E1E82] text-sm md:text-base leading-relaxed font-dmsans  ">
+          <p className="text-[#1E1E1E82] text-sm md:text-base leading-relaxed font-dmsans -ml-5  ">
            We developed a vibrant and trust-building branding <br className="hidden md:block" />
             campaign for Rajlaxmi International School to highlight its <br className="hidden md:block" />
             CBSE affiliation, nurturing learning environment, and strong <br className="hidden md:block" />
