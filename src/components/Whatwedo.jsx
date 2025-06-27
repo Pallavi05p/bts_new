@@ -71,24 +71,32 @@ const WhatWeDo = () => {
         <p className="hidden md:block text-base text-[#D9D9D994] mb-6 text-right">
           From Digital Screens To Printed Streets, BTS Advertising Delivers Creative, Results-Driven Solutions That Elevate Your Brand Across Every Medium.
         </p>
+<div className="bg-[#B7D8FB] w-full text-[#1E1E1E] md:p-6 p-4 rounded-3xl">
+  <h3 className="font-semibold text-2xl md:text-3xl mb-4">Printing & Branding</h3>
 
-        <div className="bg-[#B7D8FB] w-full h-96 text-[#1E1E1E] md:p-6 p-2 rounded-3xl">
-          <h3 className="font-semibold text-3xl mb-4">Printing & Branding</h3>
+  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-4">
+    <img
+      src="/what1.png"
+      alt="Print 1"
+      className="rounded-xl w-full h-40 md:h-48 object-cover"
+    />
+    <img
+      src="/what2.png"
+      alt="Print 2"
+      className="rounded-xl w-full h-40 md:h-48 object-cover"
+    />
+    <img
+      src="/what3.png"
+      alt="Print 3"
+      className="rounded-xl w-full h-40 md:h-48 object-cover"
+    />
+  </div>
 
-          <div className="flex gap-2 mb-4 flex-wrap">
-            <img src="/what1.png" alt="Print" className="rounded-xl md:w-40 md:h-48 w-28 h-36 object-cover" />
-            <img src="/what2.png" alt="Print" className="rounded-xl md:w-40 md:h-48 w-28 h-36 object-cover" />
-            <img
-              src="/what3.png"
-              alt="Print"
-              className="rounded-xl lg:w-40 lg:h-48 w-20 h-36 object-cover md:hidden lg:block"
-            />
-          </div>
+  <p className="text-sm md:text-base text-[#1E1E1E] leading-relaxed">
+    We deliver stunning print materials and branding solutions — from brochures to van wraps — that capture attention and build credibility.
+  </p>
+</div>
 
-          <p className="text-base text-[#1E1E1E]">
-            We deliver stunning print materials and branding solutions — from brochures to van wraps — that capture attention and build credibility.
-          </p>
-        </div>
       </div>
     </section>
   );
